@@ -20,9 +20,15 @@ get_header(); ?>
 			<header class="page">
 				<div class="entry-content">
 					<h1><?php the_title(); ?></h1>
-					<?php the_content(); ?>
+					
 				</div>
 			</header>
+
+			<section class="description">
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+			</section>
 			
 
 		</main><!-- #main -->
