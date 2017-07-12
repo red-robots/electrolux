@@ -1,0 +1,175 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	font-family: $font__main;
+
+	@media screen and (min-width: $midwidth) {
+		width: auto;
+		clear: none;
+		float: right;
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+		text-transform: uppercase;
+		width: 100%;
+		font: {
+			weight: 500;
+			size: 2rem;
+		}
+		margin: 10px;
+		@media screen and (min-width: $midwidth) {
+			width: auto;
+			font-size: 1rem;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 2rem;
+		}
+		
+
+		&.blue {
+			a {
+				background-color: $color-blue;
+			}
+		}
+		&.green {
+			a {
+				background-color: $color-green;
+			}
+		}
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+		padding: 10px 40px; 
+		color: #fff;
+		@media screen and (min-width: $midwidth) {
+			padding: 5px 20px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			padding: 10px 40px;
+		}
+
+
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+	// background-color: $color-green;
+	ul.sub-menu {
+		background-color: rgba($color-green,1);
+	}
+	
+}
+
+
+@media screen and (min-width: $midwidth) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+button.menu-toggle {
+	border: 0px;
+	text-shadow: none;
+	background-color: rgba($color-green,1);
+	color: #fff;
+	box-shadow: none;
+	width: auto;
+	display: inline-block;
+	margin: 10px auto;
+	border-radius: 0;
+	text-transform: uppercase;
+	font: {
+		
+		weight :300;
+		size: 20px;
+	}
+	
+	@media screen and (min-width: $midwidth) {
+		display: none;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

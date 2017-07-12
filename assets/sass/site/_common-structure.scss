@@ -1,0 +1,289 @@
+
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1200px;
+		padding: 0px;
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+#content {
+	width: 100%;
+	float: left;
+}
+.home-banner {
+	width: 100%;
+	position: relative;
+	line-height: 0;
+	float: left;
+
+	img {
+		width: 100%;
+	}
+	z-index: 1;
+	h2 {
+		width: 100%;
+		text-align: center;
+		font: {
+			size: 2rem;
+			weight: 700;
+		}
+		color: #fff;
+		position: absolute;
+		top: 20%;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 5rem;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 10rem;
+		}
+	}
+	.dates {
+		background-color: rgba(0,0,0,.3);
+		color: #fff;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+		text-align: center;
+		line-height: 1.2;
+		padding: 30px 0;
+		h3 {
+			width: 100%;
+			text-align: center;
+			margin: 0 0 5px 0;
+			font: {
+				size: 1.3rem;
+				weight: 500;
+			}
+			@media screen and (min-width: $tabwidth) {
+				font-size: 1.5rem;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 2.8rem;
+			}
+		}
+		h4 {
+			width: 100%;
+			text-align: center;
+			margin: 0 0 0px 0;
+			font: {
+				size: 1.3rem;
+				weight: 300;
+			}
+			@media screen and (min-width: $tabwidth) {
+				font-size: 1.5rem;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 2.8rem;
+			}
+		}
+	}
+}
+header.trip-name {
+	width: 100%;
+	float: left;
+	text-align: center;
+	position: relative;
+
+	background-color: $color-green-blue;
+	color: #fff;
+	padding: 10px 0 60px 0;
+	margin: 0 0 40px 0;
+
+	h2 {
+		width: 100%;
+		text-align: center;
+
+		font: {
+			size: 1.5rem;
+			weight: 700;
+		}
+		@media screen and (min-width: $tabwidth) {
+			font-size: 1.5rem;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 2.8rem;
+		}
+	}
+	h5 {
+		width: 100%;
+		text-align: center;
+
+		font: {
+			size: 1.6rem;
+			weight: 500;
+		}
+		@media screen and (min-width: $tabwidth) {
+			font-size: 1.5rem;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 1.6rem;
+		}
+	}
+	.chevron {
+		width: auto;
+		display: inline-block;
+		margin: -40px auto 0 auto;
+	}
+}
+header#masthead {
+	width: 100%;
+	float: left;
+	text-align: center;
+	@media screen and (min-width: $midwidth) {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	z-index: 15;
+	padding: 15px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+/* Logo */
+.logo , h1.logo {
+	width: 300px;
+	height: 96px;
+	background: {
+		image: url(images/TheIHCGroup_logo.png);
+		size: cover;
+	}	
+	margin: 10px auto;
+
+	@media screen and (min-width: $midwidth) {
+		width: 300px;
+		height: 96px;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 300px;
+	height: 96px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $midwidth) {
+		width: 300px;
+		height: 96px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+#primary {
+	width: 100%;
+	position: relative;
+	z-index: 10;
+}
+section.description {
+	width: 70%;
+	margin: 30px auto;
+	font: {
+		size: 1rem;
+		line-height: 1.2;
+	}
+	@media screen and (min-width: $tabwidth) {
+		size: 1rem;
+	}
+	@media screen and (min-width: $deskwidth) {
+		size: 1.5rem;
+	}
+}
+footer.site-footer {
+	width: 100%;
+	clear: both;
+}
+header.page {
+	width: 100%;
+	float: left;
+	margin: 150px 0 0 0;
+	text-align: center;
+	color: $color-green;
+	border-top: 1px solid $color-green-blue;
+}
+section.gallery {
+	width: 94%;
+	margin: 30px auto;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+	div.photo-box {
+		width: 90%;
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+		}
+		@media screen and (min-width: $tabwidth) {
+			width: 30%;
+		}
+		
+		
+	}
+}
+section.boxes {
+	width: 100%;
+	padding: 20px 0;
+	float: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+	color: $color-green;
+	.box {
+		width: 24%;
+		border: 1px solid $color-green;
+		padding: 1%;
+		h3 {
+			margin-top: 0;
+		}
+		ul {
+			margin: 0 0 0 10px ;
+		}
+	}
+}
