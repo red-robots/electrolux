@@ -4962,7 +4962,7 @@ a {
     .main-navigation li.blue a {
       background-color: #1A245F; }
     .main-navigation li.green a {
-      background-color: #7F952C; }
+      background-color: #1A245F; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -4981,7 +4981,7 @@ a {
   display: block; }
   .menu-toggle ul.sub-menu,
   .main-navigation.toggled ul ul.sub-menu {
-    background-color: #7f952c; }
+    background-color: #1a245f; }
 
 @media screen and (min-width: 900px) {
   .menu-toggle {
@@ -4992,7 +4992,7 @@ a {
 button.menu-toggle {
   border: 0px;
   text-shadow: none;
-  background-color: #7f952c;
+  background-color: #1a245f;
   color: #fff;
   box-shadow: none;
   width: auto;
@@ -5830,7 +5830,7 @@ header.page {
   float: left;
   margin: 150px 0 0 0;
   text-align: center;
-  color: #7F952C;
+  color: #1A245F;
   border-top: 1px solid #1A245F; }
 
 section.gallery {
@@ -5885,10 +5885,10 @@ section.boxes {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  color: #7F952C; }
+  color: #1A245F; }
   section.boxes .box {
     width: 24%;
-    border: 1px solid #7F952C;
+    border: 1px solid #1A245F;
     padding: 1%; }
     section.boxes .box h3 {
       margin-top: 0; }
