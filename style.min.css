@@ -553,7 +553,7 @@ to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translat
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */@font-face{font-family:'FontAwesome';src:url("./fonts/font-awesome/fontawesome-webfont.eot?v=4.5.0");src:url("./fonts/font-awesome/fontawesome-webfont.eot?v=4.5.0#iefix") format("embedded-opentype"),url("./fonts/font-awesome/fontawesome-webfont.woff2?v=4.5.0") format("woff2"),url("./fonts/font-awesome/fontawesome-webfont.woff?v=4.5.0") format("woff"),url("./fonts/font-awesome/fontawesome-webfont.ttf?v=4.5.0") format("truetype"),url("./fonts/font-awesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}
-.fa{display:inline-block;font:normal normal normal 14px / 1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-15%}
 .fa-2x{font-size:2em}
 .fa-3x{font-size:3em}
@@ -1285,7 +1285,7 @@ a:hover,a:active{outline:0}
 .main-navigation li{float:left;position:relative;text-transform:uppercase;width:100%;font-weight:500;font-size:2rem;margin:10px}
 @media screen and (min-width:900px){.main-navigation li{width:auto;font-size:1rem}
 }@media screen and (min-width:1200px){.main-navigation li{font-size:2rem}
-}.main-navigation li.blue a{background-color:#4e7986}
+}.main-navigation li.blue a{background-color:#1a245f}
 .main-navigation li.green a{background-color:#7f952c}
 .main-navigation a{display:block;text-decoration:none;padding:10px 40px;color:#fff}
 @media screen and (min-width:900px){.main-navigation a{padding:5px 20px}
@@ -1409,14 +1409,15 @@ html[xmlns] .flexslider .slides{display:block}
 .home-banner h2{width:100%;text-align:center;font-size:2rem;font-weight:700;color:#fff;position:absolute;top:20%}
 @media screen and (min-width:600px){.home-banner h2{font-size:5rem}
 }@media screen and (min-width:1200px){.home-banner h2{font-size:10rem}
-}.home-banner .dates{background-color:rgba(0,0,0,0.3);color:#fff;width:100%;position:absolute;bottom:0;left:0;overflow:hidden;text-align:center;line-height:1.2;padding:30px 0}
-.home-banner .dates h3{width:100%;text-align:center;margin:0 0 5px 0;font-size:1.3rem;font-weight:500}
+}.home-banner .dates{background-color:#1a245f;color:#fff;width:100%;bottom:0;left:0;overflow:hidden;text-align:center;line-height:1.2;padding:30px 0}
+@media screen and (min-width:600px){.home-banner .dates{background-color:rgba(0,0,0,0.3);position:absolute}
+}.home-banner .dates h3{width:100%;text-align:center;margin:0 0 5px 0;font-size:1.3rem;font-weight:500}
 @media screen and (min-width:600px){.home-banner .dates h3{font-size:1.5rem}
 }@media screen and (min-width:1200px){.home-banner .dates h3{font-size:2.8rem}
 }.home-banner .dates h4{width:100%;text-align:center;margin:0;font-size:1.3rem;font-weight:300}
 @media screen and (min-width:600px){.home-banner .dates h4{font-size:1.5rem}
 }@media screen and (min-width:1200px){.home-banner .dates h4{font-size:2.8rem}
-}header.trip-name{width:100%;float:left;text-align:center;position:relative;background-color:#325364;color:#fff;padding:10px 0 60px 0;margin:0 0 40px 0}
+}header.trip-name{width:100%;float:left;text-align:center;position:relative;background-color:#1a245f;color:#fff;padding:10px 0 60px 0;margin:0 0 40px 0}
 header.trip-name h2{width:100%;text-align:center;font-size:1.5rem;font-weight:700}
 @media screen and (min-width:600px){header.trip-name h2{font-size:1.5rem}
 }@media screen and (min-width:1200px){header.trip-name h2{font-size:2.8rem}
@@ -1424,20 +1425,22 @@ header.trip-name h2{width:100%;text-align:center;font-size:1.5rem;font-weight:70
 @media screen and (min-width:600px){header.trip-name h5{font-size:1.5rem}
 }@media screen and (min-width:1200px){header.trip-name h5{font-size:1.6rem}
 }header.trip-name .chevron{width:auto;display:inline-block;margin:-40px auto 0 auto}
-header#masthead{width:100%;float:left;text-align:center;z-index:15;padding:15px 0;background:-webkit-linear-gradient(left,white 0,rgba(255,255,255,0) 100%);background:linear-gradient(to right,white 0,rgba(255,255,255,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#00ffffff',GradientType=1)}
+header#masthead{width:100%;float:left;text-align:center;z-index:15;padding:15px 0;background-image:url(images/background.jpg)}
 @media screen and (min-width:900px){header#masthead{position:fixed;top:0;left:0}
-}.logo,h1.logo{width:300px;height:96px;background-image:url(images/TheIHCGroup_logo.png);background-size:cover;margin:10px auto}
-@media screen and (min-width:900px){.logo,h1.logo{width:300px;height:96px;float:left;margin:0}
+}.logo,h1.logo{width:200px;height:64px;background-image:url(images/logo.png);background-size:100%;margin:10px auto}
+@media screen and (min-width:350px){.logo,h1.logo{width:300px;height:96px}
+}@media screen and (min-width:900px){.logo,h1.logo{float:left;margin:0}
 }@media screen and (min-width:1200px){}
-.logo a,h1.logo a{width:300px;height:96px;display:block;text-indent:-9000px}
-@media screen and (min-width:900px){.logo a,h1.logo a{width:300px;height:96px}
+.logo a,h1.logo a{width:200px;height:64px;display:block;text-indent:-9000px}
+@media screen and (min-width:350px){.logo a,h1.logo a{width:300px;height:96px}
+}@media screen and (min-width:900px){.logo a,h1.logo a{width:300px;height:96px}
 }@media screen and (min-width:1200px){}
 #primary{width:100%;position:relative;z-index:10}
 section.description{width:70%;margin:30px auto;font-size:1rem;font-line-height:1.2}
 @media screen and (min-width:600px){section.description{size:1rem}
 }@media screen and (min-width:1200px){section.description{size:1.5rem}
 }footer.site-footer{width:100%;clear:both}
-header.page{width:100%;float:left;margin:150px 0 0 0;text-align:center;color:#7f952c;border-top:1px solid #325364}
+header.page{width:100%;float:left;margin:150px 0 0 0;text-align:center;color:#7f952c;border-top:1px solid #1a245f}
 section.gallery{width:94%;margin:30px auto;padding:20px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 section.gallery div.photo-box{width:90%;margin-bottom:30px}
 section.gallery div.photo-box img{width:100%}
