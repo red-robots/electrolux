@@ -8,7 +8,11 @@
  *
  * @package ACStarter
  */
-
+	$lineone = get_field('footer_line_1', 'option');
+	$line2 = get_field('line2', 'option');
+	$email = get_field('email', 'option');
+	$phone_number = get_field('phone_number', 'option');
+	$spam = antispambot($email);
 ?>
 
 	</div><!-- #content -->
@@ -17,7 +21,10 @@
 		
 			<header class="trip-name">
 				<div class="wrapper">
-					<h5><?php bloginfo('description'); ?></h5>
+					<h5><?php bloginfo('description'); ?> | <?php echo $phone_number; ?></h5>
+					<h4>
+						<?php echo $line2 . ' <a href="mailto:'. $spam .'">' . $spam . '</a>';  ?>
+					</h4>
 				</div><!-- wrapper -->
 			</header>
 	

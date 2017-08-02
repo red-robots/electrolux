@@ -28,13 +28,15 @@ setup_postdata( $post );
 	$photos = get_field('photos');
 	$images = get_field('photos');
 
+	
+
 wp_reset_postdata();
 
 ?>
 <?php if( !empty($image) ): ?>
 			
 			<div class="home-banner">
-				<h2><?php echo $title; ?></h2>
+				<!-- <h2><?php echo $title; ?></h2> -->
 				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				<div class="dates">
 					<h3><?php echo $title_2; ?></h3>

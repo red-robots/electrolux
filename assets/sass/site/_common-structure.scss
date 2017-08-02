@@ -76,14 +76,14 @@
 		background-color: $color-blue;
 		color: #fff;
 		width: 100%;
-		bottom: 0;
+		top: 20%;
 		left: 0;
 		overflow: hidden;
 		text-align: center;
 		line-height: 1.2;
 		padding: 30px 0;
 		@media screen and (min-width: $tabwidth) {
-			background-color: rgba(0,0,0,.3);
+			background-color: rgba(0,0,0,0);
 			position: absolute;
 		}
 		h3 {
@@ -169,6 +169,7 @@ header#masthead {
 	width: 100%;
 	float: left;
 	text-align: center;
+	background-color: $color-blue;
 	@media screen and (min-width: $midwidth) {
 		position: fixed;
 		top: 0;
@@ -176,7 +177,8 @@ header#masthead {
 	}
 	z-index: 15;
 	padding: 15px 0;
-	background-image: url(images/background.jpg);
+	// background-image: url(images/background.jpg);
+
 }
 /* Logo */
 .logo , h1.logo {
@@ -240,6 +242,9 @@ section.description {
 footer.site-footer {
 	width: 100%;
 	clear: both;
+	a {
+		color: #fff;
+	}
 }
 header.page {
 	width: 100%;
